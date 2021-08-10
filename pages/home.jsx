@@ -1,10 +1,13 @@
+import MainLayout from "../components/Layouts/MainLayout"
 
 export default function HomeView() {
-  return (
-    <div>
-      Home
-    </div>
-  )
+    return (
+        <MainLayout>
+            <div>
+                Home
+            </div>
+        </MainLayout>
+    )
 }
 
 
