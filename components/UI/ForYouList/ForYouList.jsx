@@ -12,7 +12,7 @@ const ForYouList = (props) => {
             <div className="foryou-list__thumbnails">
                 {loopComp(
                     (<div className="foryou-list__thumbnail">
-                        <img src="https://m.media-amazon.com/images/I/31oC83ZVCgL._AC_.jpg" alt="" />
+                        <img src="https://i5.walmartimages.com/asr/268d4e2f-1b71-48bb-a090-b0fd9ae118b6_1.f35b5e9f6d1b38be5eb509fafaf2ec6b.jpeg" alt="" />
                         <div className="foryou-list__top-layer">
                             <i className="fas fa-play" />
                         </div>

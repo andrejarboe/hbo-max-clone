@@ -1,4 +1,4 @@
-.foryou-list {
+.poster-view {
   padding: 20px 0 20px 50px;
   &__title {
     font-weight: 500;
@@ -17,13 +17,13 @@
     }
   }
   &__thumbnail {
-    width: 450px;
-    height: 253px;
+    width: 240px;
+    height: 360px;
     position: relative;
     margin-right: 10px;
     img {
-      width: 450px;
-      height: 100%;
+      width: 240px;
+      height: 360px;
       object-fit: cover;
       object-position: center;
       flex-shrink: 0;

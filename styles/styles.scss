@@ -5,3 +5,10 @@
 @use '../components/UI/SideNav/side-nav';
 @use '../components/UI/Featuredmedia/FeaturedMedia';
 @use '../components/UI/ForYouList/ForYouList';
+@use '../components/UI/JustAdded/JustAdded';
+@use '../components/UI/PosterView/PosterView';
+
+
+html, body{
+    background: black;
+}
