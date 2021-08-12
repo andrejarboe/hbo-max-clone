@@ -3,7 +3,7 @@ import { useStateContext } from "../../HBOProvider";
 
 const Login = () => {
   const globalState = useStateContext();
-
+  
   return (
       <div className="login-user">
         <div className="login-user__top">
