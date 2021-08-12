@@ -17,7 +17,7 @@ const SearchModal = (props) => {
         </div>
   
         <h3 className="search-modal__title">
-          Popular Searches
+          Popular Search
         </h3>
         
         <div className="search-modal__thumbnails">
