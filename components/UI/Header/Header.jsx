@@ -1,4 +1,5 @@
 import Account from "../Account/Account";
+import SearchModal from "../SearchModal/SearchModal";
 
 const Header = (props) => {
     return (
@@ -13,10 +14,11 @@ const Header = (props) => {
             </div>
             <div className="top-header__logo"></div>
             <div className="top-header__account">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50" className="top-header__user-img" alt="" />
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50" className="top-header__user-img" />
                 <div className="top-header__user-name">Stephanie</div>
             </div>
             <Account />
+            <SearchModal />
         </header>
     )
 }
