@@ -23,6 +23,9 @@ export default function Create() {
       console.log('users: ', users);
       console.log('ls users: ', ls('users'));
 
+      router.push('/login')
+
+
     } else {
       users = ls('users')
       user = {
