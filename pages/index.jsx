@@ -36,6 +36,10 @@ export default function Home() {
         type="small-v"
       />
       <MediaRow 
+        title="Animations"
+        type="large-h"
+      />
+      <MediaRow 
         title="Sci-Fi"
         type="small-v"
       />
