@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { shuffleArray } from "../../utalities";
 
 const MediaRow = (props) => {
     const [loadingData, setLoadingData] = useState(true);
@@ -8,9 +9,9 @@ const MediaRow = (props) => {
     // /discover/movie?with_genres=28&primary_release_year=2021
     useEffect(() => {
         // Make a request for a user with a given ID
-        axios.get('https://api.themoviedb.org/3/discover/movie?with_genres=28&primary_release_year=2021&api_key=8d976d47d1b80d5a77b6ec844f4b541f&language=en-US')
+        axios.get(`https://api.themoviedb.org/3/${props.endpoint}&api_key=8d976d47d1b80d5a77b6ec844f4b541f&language=en-US`)
             .then(function (response) {
-                setMoviesData(response.data.results)
+                setMoviesData(shuffleArray(response.data.results))
                 setLoadingData(false)
                 // handle success
                 console.log('response: ' + props.title);

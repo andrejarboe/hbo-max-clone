@@ -22,26 +22,32 @@ export default function Home() {
       <MediaRow 
         title="Movies"
         type="large-v"
+        endpoint="discover/movie?sort_by=popularity.desc"
       />
       <MediaRow 
         title="Series"
         type="small-h"
+        endpoint="discover/tv?&primary_release_year=2021"
       />
       <MediaRow 
         title="Action"
         type="small-v"
+        endpoint="discover/movie?with_genres=28&primary_release_year=2021"
       />
       <MediaRow 
         title="Horror"
         type="small-v"
+        endpoint="discover/movie?with_genres=27&primary_release_year=2021"
       />
       <MediaRow 
         title="Animations"
         type="large-h"
+        endpoint="discover/movie?with_genres=16&primary_release_year=2021"
       />
       <MediaRow 
         title="Sci-Fi"
         type="small-v"
+        endpoint="discover/movie?with_genres=878&primary_release_year=2021"
       />
       {/* <ForYouList />
       <JustAdded />
