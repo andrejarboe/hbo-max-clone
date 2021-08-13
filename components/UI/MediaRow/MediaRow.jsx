@@ -31,19 +31,22 @@ const MediaRow = (props) => {
         }
         return thumbnails
     }
-    const showThumbnails = () => {
+    const showThumbnails = (type) => {
         // setTimeout(() => setLoadingData(false), 3000);
         return loadingData
             ? loopComp((<Skeleton />), 10)
             : movies.map((movie) => {
-                return <Thumbnail movieData={movie} />
+                return <Thumbnail movieData={movie} type={type} />
             })
     }
+
+
+
     return (
         <div className={`media-row ${props.type}`}>
             <h3 className="media-row__title">{props.title}</h3>
             <div className="media-row__thumbnails">
-                {showThumbnails()}
+                {showThumbnails(props.type)}
                 {/* {loopComp((<Thumbnail />), 10)} */}
             </div>
         </div>
@@ -51,10 +54,24 @@ const MediaRow = (props) => {
 }
 
 const Thumbnail = (props) => {
+    const thumbSize = (type) => {
+        if(type === 'large-v'){
+            return '400'
+        }
+        if(type === 'small-v'){
+            return '185'
+        }
+        if(type === 'large-h'){
+            return '500'
+        }
+        if(type === 'small-h'){
+            return '342'
+        }
+    }
     return (
         <div className="media-row__thumbnail">
             {/* <img src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/uI0I369wR5MZlnzRVh9bNf3FjX0=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/BOW7XHAQG4I6RKSDEUVRUHIXFI.jpg" alt="" /> */}
-            <img src={`http://image.tmdb.org/t/p/original${props.movieData.poster_path}`} alt="" />
+            <img src={`http://image.tmdb.org/t/p/w${thumbSize(props.type)}/${props.movieData.poster_path}`} alt="" />
             <div className="media-row__top-layer">
                 <i className="fas fa-play" />
             </div>

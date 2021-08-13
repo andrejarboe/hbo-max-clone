@@ -21,21 +21,21 @@ export default function Home() {
   return AuthCheck(
     <MainLayout>
       <FeaturedMedia />
-      <LazyLoad offset={-200} placeholder={<Placeholders title="Movies" type="large-v" />}>
+      <LazyLoad offset={-400} placeholder={<Placeholders title="Movies" type="large-v" />}>
         <MediaRow
           title="Movies"
           type="large-v"
           endpoint="discover/movie?sort_by=popularity.desc"
         />
       </LazyLoad>
-      <LazyLoad offset={-200} placeholder={<Placeholders title="Series" type="small-h" />}>
+      <LazyLoad offset={-400} placeholder={<Placeholders title="Series" type="small-h" />}>
         <MediaRow
           title="Series"
           type="small-h"
           endpoint="discover/tv?&primary_release_year=2021"
         />
       </LazyLoad>
-      <LazyLoad offset={-200} placeholder={<Placeholders title="Action" type="small-v" />}>
+      <LazyLoad offset={-400} placeholder={<Placeholders title="Action" type="small-v" />}>
         <MediaRow
           title="Action"
           type="small-v"
