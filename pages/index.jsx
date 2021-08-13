@@ -4,9 +4,7 @@ import { useRouter } from "next/router";
 
 import MainLayout from "../components/Layouts/MainLayout";
 import FeaturedMedia from "../components/UI/Featuredmedia/FeaturedMedia";
-import ForYouList from "../components/UI/ForYouList/ForYouList";
-import JustAdded from "../components/UI/JustAdded/JustAdded";
-import PosterView from "../components/UI/PosterView/PosterView";
+import MediaRow from "../components/UI/MediaRow/MediaRow"
 import AuthCheck from "../components/AuthCheck";
 
 
@@ -21,9 +19,29 @@ export default function Home() {
   return AuthCheck(
     <MainLayout>
       <FeaturedMedia />
-      <ForYouList />
+      <MediaRow 
+        title="Movies"
+        type="large-v"
+      />
+      <MediaRow 
+        title="Series"
+        type="small-h"
+      />
+      <MediaRow 
+        title="Action"
+        type="small-v"
+      />
+      <MediaRow 
+        title="Horror"
+        type="small-v"
+      />
+      <MediaRow 
+        title="Sci-Fi"
+        type="small-v"
+      />
+      {/* <ForYouList />
       <JustAdded />
-      <PosterView />
+      <PosterView /> */}
     </MainLayout>
   )
 }
