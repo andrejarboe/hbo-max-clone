@@ -5,7 +5,7 @@ import FeaturedMedia from "../components/UI/Featuredmedia/FeaturedMedia";
 import MediaRow from "../components/UI/MediaRow/MediaRow"
 
 
-export default function HomeView() {
+export default function SingleMediaPage() {
     return AuthCheck(
         <MainLayout>
             <FeaturedMedia />

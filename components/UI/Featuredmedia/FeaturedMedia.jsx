@@ -25,7 +25,7 @@ const FeaturedMedia = (props) => {
                      </div>
                  </div>
              </div>
-             Featured Media 
+             {/* Featured Media  */}
         </div>
     )
 }
