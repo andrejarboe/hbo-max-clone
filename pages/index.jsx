@@ -25,6 +25,8 @@ export default function Home() {
         title='Mortal Kombat'
         location='In theaters and on HBO MAX. Streaming throughout May 23.'
         mediaUrl='/movies/id'
+        linkUrl=""
+        type="front"
       />
       <LazyLoad offset={-400} placeholder={<Placeholders title="Movies" type="large-v" />}>
         <MediaRow
